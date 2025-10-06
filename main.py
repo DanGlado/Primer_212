@@ -1,9 +1,9 @@
-# Контейнер расчета Daniil super classniy lox
+# Контейнер расчета Daniil super classniy
 from sympy import *
 
 k, T, C, L = symbols('k T C L')
 #1 способ
-C_ost = 10001123
+C_ost = 9999
 Am_lst = []
 C_ost_lst = []
 for i in range(10):
