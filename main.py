@@ -3,10 +3,10 @@ from sympy import *
 
 k, T, C, L = symbols('k T C L')
 #1 способ
-C_ost = 20000000
+C_ost = 40000
 Am_lst = []
 C_ost_lst = []
-for i in range(16):
+for i in range(10):
     Am = (C - L) / T
     C_ost -= Am.subs({C: 100000, T: 5, L: 0})
     Am_lst.append(round(Am.subs({C: 100000, T: 5, L: 0}), 2))
@@ -17,10 +17,10 @@ print(C_ost_lst)
 
 #2 способ
 Aj = 0
-C_ost = 2000000
+C_ost = 40000
 Am_lst_2 = []
 C_ost_lst_2 = []
-for i in range(16):
+for i in range(10):
     Am = k * 1 / T * (C - Aj)
     C_ost -= Am.subs({
         C: 100000,
