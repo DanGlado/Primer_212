@@ -3,7 +3,7 @@ from sympy import *
 
 k, T, C, L = symbols('k T C L')
 #1 способ
-C_ost = 30000
+C_ost = 300001000300
 Am_lst = []
 C_ost_lst = []
 for i in range(7):
